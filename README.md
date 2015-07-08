@@ -7,6 +7,14 @@ Finding duplicate has two steps:
 1. Sorting collection. Java Collections.sort() use internally merge sort algorithm, which complexity is always O(n log n) (n-collection size), but when we sort Person objects we must compare names and this operation is O(m) (m-size of string) in the worst case, and O(1) in the best case.
 2. Removing duplicated elements. This operation has always O(n) complexity.
 
+##Running
+Project use gradle wrapper to build.
+File /src/test/java/pl/astrait/duplicates/DuplicateRemoverTest.java contains junit test.
+You can run test using:
+```
+gradlew test
+```
+
 ## Duplicates
 
 You have *very big* list of elements. Please provide best solution to detect and remove duplicated elements.
